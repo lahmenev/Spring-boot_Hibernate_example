@@ -18,10 +18,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Autowired
     CustomerDao customerDao;
 
-    /**
-     * Gets customers
-     * @return
-     */
     public List<Customer> getAllCustomers() {
         return customerDao.getCustomersList();
     }
